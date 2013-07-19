@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/task_edit" 
+        android:title="@string/action_edit_task"
+        android:showAsAction="always|withText"
+        android:orderInCategory="1" 
+        android:icon="@drawable/content_edit"/>
+    
+    <item android:id="@+id/task_delete" 
+        android:title="@string/action_delete_task"
+        android:showAsAction="always|withText"
+        android:orderInCategory="2" 
+        android:icon="@drawable/content_discard"/>
+    
+</menu>

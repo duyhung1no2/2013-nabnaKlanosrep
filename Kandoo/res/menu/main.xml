@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_add_task"
+        android:icon="@drawable/content_new"
+        android:orderInCategory="1"
+        android:showAsAction="withText|always"
+        android:title="@string/action_add_task"/>
+
+    <!-- <item android:id="@+id/action_edit_boards"
+        android:title="@string/action_edit_boards"
+       android:showAsAction="never" /> -->
+</menu>

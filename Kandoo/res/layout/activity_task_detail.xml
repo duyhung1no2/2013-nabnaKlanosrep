@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/task_title"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTaskNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_default" />
+
+        <!-- DATE -->
+
+        <TextView
+            android:id="@+id/tvDueDate"
+            style="@style/MyTextView"
+            android:text="@string/create_due_date" />
+
+        <TextView
+            android:id="@+id/tvUnderline1"
+            style="@style/textViewUnderLine"
+            android:text="@string/due_date" />
+
+        <TextView
+            android:id="@+id/tvTaskCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/create"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:id="@+id/tvTaskDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/due"
+            android:textSize="@dimen/text_size_default" />
+
+        <!-- BOARD -->
+
+        <TextView
+            android:id="@+id/tvBoardtitle"
+            style="@style/MyTextView"
+            android:text="@string/board" />
+
+        <TextView
+            android:id="@+id/tvUnderline2"
+            style="@style/textViewUnderLine"
+            android:text="@string/board" />
+
+        <Spinner
+            android:id="@+id/spinBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp" />
+
+        <!-- LIST ITEM -->
+<!-- 
+        <TextView
+            android:id="@+id/tvCheckList"
+            style="@style/MyTextView"
+            android:text="@string/check_list" />
+
+        <TextView
+            android:id="@+id/tvUnderline3"
+            style="@style/textViewUnderLine"
+            android:text="@string/check_list" />
+
+        <LinearLayout
+            android:id="@+id/listItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout> -->
+    </LinearLayout>
+
+</ScrollView>

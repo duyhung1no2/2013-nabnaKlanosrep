@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <EditText
+            android:id="@+id/editTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/task_title"
+            android:inputType="text"
+            android:textColor="@android:color/holo_blue_light"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTaskNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/enter_task_note"
+            android:inputType="text" />
+
+        <!-- DUE DATE -->
+
+        <TextView
+            android:id="@+id/tvDueDate"
+            style="@style/MyTextView"
+            android:text="@string/due_date" />
+
+        <TextView
+            android:id="@+id/tvUnderline1"
+            style="@style/textViewUnderLine"
+            android:text="@string/due_date" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_date" />
+
+            <ImageButton
+                android:id="@+id/btDueDateCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navigation_cancel_black"
+                android:contentDescription="@string/due_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btDueTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_time" />
+
+            <ImageButton
+                android:id="@+id/btDueTimeCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navigation_cancel_black"
+                android:contentDescription="@string/due_date" />
+        </LinearLayout>
+
+        <!-- BOARD -->
+
+        <TextView
+            android:id="@+id/tvBoard"
+            style="@style/MyTextView"
+            android:text="@string/board" />
+
+        <TextView
+            android:id="@+id/tvUnderline2"
+            style="@style/textViewUnderLine"
+            android:text="@string/board" />
+
+        <Spinner
+            android:id="@+id/spinBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp" />
+
+        <!-- LIST ITEM -->
+
+<!-- 
+        <TextView
+            android:id="@+id/tvCheckList"
+            style="@style/MyTextView"
+            android:text="@string/check_list" />
+
+        <TextView
+            android:id="@+id/tvUnderline3"
+            style="@style/textViewUnderLine"
+            android:text="@string/check_list" />
+
+        <LinearLayout
+            android:id="@+id/listItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+        <EditText
+            android:id="@+id/editTaskItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/new_item"
+            android:inputType="text" /> -->
+
+    </LinearLayout>
+
+</ScrollView>
