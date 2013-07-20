@@ -29,7 +29,6 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 
 		boardDAO = new BoardDAO(this);
-
 		pagerAdapter = new TaskListPagerAdapter(getSupportFragmentManager(), getFragments());
 		pager = (ViewPager) findViewById(R.id.pager);
 		pager.setAdapter(pagerAdapter);
